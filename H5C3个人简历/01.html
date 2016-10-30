@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //    var cache = {};
+    //
+    //    // 给缓存中添加数据
+    //    function setCache(key, val) {
+    //        cache[key] = val;
+    //    }
+    //
+    //    // 获取缓存中指定的数据
+    //    function getCache(key) {
+    //        return cache[key];
+    //    }
+
+    /*---------------------------------------------------------*/
+
+
+
+    //    function i(){
+    //        var cache = {};
+    //        function setCache(key, val) {
+    //            cache[key] = val;
+    //        }
+    //         function getCache(key) {
+    //            return cache[key];
+    //        }
+    //        return {
+    //            setCache:setCache,
+    //            getCache:getCache
+    //        }
+    //
+    //    }
+    //    var f = i();
+    //    console.log(f);
+    //    f.setCache("name","Chris");
+    //    console.log(f.getCache("name"));
+    //    var arr = ["第一句话", "2", "3", "4","5","6"];
+    //    for (var i = 0; i < arr.length; i++) {
+    //        (function (i) {
+    //            setTimeout(function () {
+    //                console.log(arr[i]);
+    //            }, 1000 * (i + 1))
+    //        }(i))
+    //
+    //    }
+
+    //    function fn() {
+    //     var a = 1;
+    //     return function (par) {
+    //     console.log(a + par);
+    //     };
+    //     }
+    //
+    //     var f = fn();
+    //     f(1);
+    //     f(2);
+
+    //    function getDatas() {
+    //
+    //        var Data = {};
+    //
+    //        function setData(key, val) {
+    //            Data[key] = val;
+    //        }
+    //
+    //        function getData(key) {
+    //            return Data[key];
+    //        }
+    //
+    //        return {
+    //            setdata: setData,
+    //            getdata: getData
+    //        }
+    //    }
+    //    var fn = getDatas();
+    //    fn.setdata("name","Chris");
+    //    console.log(fn.getdata("name"));
+    //
+    //    var obj = {
+    //
+    //        fn: function () {
+    //            console.log(this);
+    //        }
+    //    }
+    //   var infn= obj.fn;
+    //    infn();
+
+
+    //    function one(a){
+    //        console.log(a);
+    //        console.log(this);
+    //    };
+    //  new one(95);
+
+    //var o = {
+    //    fn: function () {
+    //        console.log(this);
+    //    }
+    //}
+    //o.fn.call();
+    var obj = {};
+    function getType(data) {
+//         如果data不等于自己，那data就是NaN
+        if (data != data) {
+            console.log(NaN)
+        }
+        // 如果data全等于null，那data就是null
+        else if (data === null) {
+            console.log(null)
+        }
+        // 使用typeof可以判断string、boolean、number、undefined
+        else if (obj.toString.call(data) === "[object Function]") {
+            console.log(data.toString());
+        }
+        else if (typeof data === "string", "boolean", "number", "undefined") {
+            console.log(typeof data);
+        }
+
+        // 最后剩下的对象，统一使用({}).toString方法获取。
+    }
+    getType(Date);
+    getType(1);
+    getType("");
+</script>
+</body>
+</html>
