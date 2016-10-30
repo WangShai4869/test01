@@ -1,0 +1,27 @@
+html,h1,h2,h3,ul,li,div,p,body,input,span,img,b,ol,dl
+		{
+		margin: 0;
+		padding: 0;
+		}
+img input{border: 0;}		
+ul{list-style: none;}
+body {
+	font-size: 14px;
+	color: #434343;
+	font-family: "ËÎÌו";
+	background: #FFFFFF;}
+.clearfix:after{
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}	
+.clearfix{zoom:1;}
+a{color: #000;
+text-decoration: none;
+}
+a:hover{color: green;}
+.fl{float: left;}
+.fr{float: right;}
